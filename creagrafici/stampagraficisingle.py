@@ -4,7 +4,7 @@
 """Create template graphs png of single graphs.
 
 Usage:
-  stampagrafico.py [<template>]... [options]
+  stampagraficisingle.py [<template>]... [options]
 
 Options:
   -a DIR              Print the entire DIR directory.

@@ -4,7 +4,7 @@
 """Create the .csv file counting every template usage for revision.
 
 Usage:
-  official.py [options]
+  analizedump.py [options]
 
 Options:
   -f PATH             Manually set the dump's location. [default: dump.bz2]

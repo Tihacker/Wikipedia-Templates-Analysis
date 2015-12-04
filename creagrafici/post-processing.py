@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Eliminate every template used only in one page.
+"""
 
 Usage:
   post-processing.py [options]

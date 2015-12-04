@@ -4,7 +4,7 @@
 """Create template graphs png of multiple graphs.
 
 Usage:
-  stampagrafici.py [<template>]... [options]
+  stampagraficimulti.py [<template>]... [options]
 
 Options:
   -h --help           Show this screen.

@@ -7,9 +7,8 @@ Usage:
   graficop2.py [options]
 
 Options:
-
   -h --help           Show this screen.
-  -u                  Print unics.
+  -u                  Print also unics.
 
 """
 
@@ -127,11 +126,9 @@ def allgraph(unic):
 
             os.makedirs("grafici/unic")
 
-    else:
+    if not os.path.exists("grafici/total"):
 
-        if not os.path.exists("grafici/total"):
-
-            os.makedirs("grafici/total")
+        os.makedirs("grafici/total")
 
     alldict = {}
 
@@ -147,33 +144,43 @@ def allgraph(unic):
 
         if unic:
 
-            out = csv.writer(open("grafici/unic/" + name + ".csv", "w"))
+            outu = csv.writer(open("grafici/unic/" + name + ".csv", "w"))
 
-        else:
-
-            out = csv.writer(open("grafici/total/" + name + ".csv", "w"))
+        out = csv.writer(open("grafici/total/" + name + ".csv", "w"))
 
         sort = sorted(singletemplate)
 
         value = 0
 
+        valueu = 0
+
         x = []
 
         y = []
+
+        yu = []
 
         for s in sort:
 
             value = value + singletemplate[s]
 
+            valueu = valueu + 1
+
             x.append(s)
 
             y.append(value)
+
+            y.append(valueu)
 
         l = len(x)
 
         n = 0
 
         while n < l:
+
+            if unic:
+
+                outu.writerow([x[n], yu[n]])
 
             out.writerow([x[n], y[n]])
 

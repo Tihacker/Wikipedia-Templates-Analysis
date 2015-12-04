@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Eliminate every template used only in one page.
+"""
 
 Usage:
-  post-processing.py [options]
+  rimuovicommenti.py [options]
 
 Options:
   -f PATH             Manually set the .csv file location. [default: output.csv]
   -h --help           Show this screen.
-  -o OUT              Set Output File's name OUT. [default: nocomment.csv]
+  -o OUT              Set Output File's name OUT. [default: output-nocomment.csv]
 
 """
 

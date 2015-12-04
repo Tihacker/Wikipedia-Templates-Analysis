@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""Eliminate every template used only in one page.
+"""Create an output with redirects values.
 
 Usage:
-  post-processing.py [options]
+  aggiungiredirect.py [options]
 
 Options:
   -f PATH             Manually set the .csv file location. [default: output-nocomment.csv]
   -h --help           Show this screen.
-  -o PATH             Set Output File's name OUT. [default: outputwithredirects.csv]
+  -o PATH             Set Output File's name OUT. [default: output-redirects.csv]
   -r PATH             Set the redirects .csv file location. [default: redirects.csv]
 
 """
