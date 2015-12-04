@@ -13,6 +13,7 @@ Librerie necessarie per il corretto funzionamento:
 - Matplotlib
 
 Ordine di esecuzione:
+
 | Ordine | Nome File | Input | Output |
 |:-------------:|:-------------:|:-------------:|:-------------:|
 | 1 | analizedump.py | .bz2 dump | output.csv |
